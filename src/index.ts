@@ -1,5 +1,7 @@
 import { StorageClass, Key, ExpiresEnum, Expires, Data } from './types';
 
+export { EventCls } from './event';
+
 export class Storage implements StorageClass {
   set<T>(key: Key, value: T, expires?: Expires) {
     const data = {
